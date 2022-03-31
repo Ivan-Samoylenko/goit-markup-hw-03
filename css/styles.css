@@ -46,7 +46,6 @@ body {
 /* ======= */
 
 .button {
-  font-family: roboto;
   background-color: var(--white-primary);
   color: var(--black-logo);
   cursor: pointer;
