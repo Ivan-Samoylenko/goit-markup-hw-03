@@ -351,13 +351,13 @@ img {
   margin-top: 30px;
   margin-left: 30px;
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
 
   background-color: var(--white-primary-color);
 }
 
-.team-list .photo {
-  margin-bottom: 30px;
+.team-list .image-caption {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-list .title,
