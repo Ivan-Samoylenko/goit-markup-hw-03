@@ -277,7 +277,15 @@ body {
 
 /* portfolio list */
 .portfolio-list .link {
+  border-bottom: 1px solid #EEEEEE;
+  
   display: inline-block;
+
+  background-color: white;
+}
+
+.portfolio-list img {
+  display: block;
 }
 
 .portfolio-list .title {
@@ -288,6 +296,8 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--grey-secondary-color);
+
+  background-color: blue;
 }
 
 .portfolio-list p {
@@ -297,4 +307,6 @@ body {
   font-size: 16px;
   line-height: 1.88px;
   color: var(--grey-primary-color);
+
+  background-color: blue;
 }
