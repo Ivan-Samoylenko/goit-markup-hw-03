@@ -281,6 +281,11 @@ img {
 /* portfolio page main content */
 /* =========================== */
 
+/* portfolio filter */
+.filter {
+  margin-bottom: 50px;
+}
+
 /* portfolio list */
 .portfolio-list .link {
   border-bottom: 1px solid var(--portfolio-card-border-color);
