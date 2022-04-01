@@ -350,6 +350,10 @@ img {
   width: calc(100% / 4 - 30px);
   margin-top: 30px;
   margin-left: 30px;
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
+
+  background-color: var(--white-primary-color);
 }
 
 .team-list .photo {
@@ -407,10 +411,14 @@ img {
 
 .portfolio-list .link {
   display: block;
-
+  
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: var(--portfolio-card-border-color);
+}
+
+.portfolio-list .image-caption {
+  padding: 20px 24px;
 }
 
 .portfolio-list .title {
@@ -423,7 +431,7 @@ img {
   color: var(--grey-secondary-color);
 }
 
-.portfolio-list p {
+.portfolio-list .text {
   margin-top: 0;
   margin-bottom: 0;
 
