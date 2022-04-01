@@ -25,6 +25,11 @@ body {
   color: var(--grey-primary-color);
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -281,11 +286,6 @@ body {
   border-bottom: 1px solid var(--portfolio-card-border-color);
   
   display: inline-block;
-}
-
-.portfolio-list img {
-  max-width: 100%;
-  display: block;
 }
 
 .portfolio-list .title {
