@@ -289,8 +289,6 @@ img {
 /* portfolio list */
 .portfolio-list .link {
   border-bottom: 1px solid var(--portfolio-card-border-color);
-  
-  display: inline-block;
 }
 
 .portfolio-list .title {
