@@ -249,6 +249,10 @@ img {
   font-style: normal;
 }
 
+.address-nav > li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .address-nav .link {
   display: block;
 }
