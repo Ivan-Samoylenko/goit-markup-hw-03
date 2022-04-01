@@ -3,6 +3,9 @@
 /* ======= */
 
 :root {
+  /* layout grid */
+  --container-width: 1200px;
+  --container-indent: 15px;
   /* colors */
   --accent-color: #2196f3;
   --black-logo-color: #000000;
@@ -32,9 +35,11 @@ img {
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-indent);
+  padding-right: var(--container-indent);
 }
 
 /* delete list marks */
@@ -61,6 +66,10 @@ img {
   padding-bottom: 0;
 }
 
+.section.team {
+  background-color: var(--white-secondary-color);
+}
+
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -76,7 +85,9 @@ img {
 /* ======= */
 
 .button {
-  border: 0 solid transparent;
+  border-width: 0;
+  border-style: solid;
+  border-color: transparent;
   border-radius: 4px;
 
   background-color: var(--white-primary-color);
@@ -118,7 +129,7 @@ img {
 /* ==== */
 
 .logo {
-  display: inline-block;
+  display: block;
 
   font-family: raleway;
   font-weight: 700;
@@ -146,10 +157,11 @@ img {
 /* ============== */
 
 .header {
-  border-bottom: 1px solid var(--header-border-color);;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--header-border-color);
 }
 
-/* site nav */
 /* general */
 .site-nav,
 .contacts-nav {
@@ -158,6 +170,12 @@ img {
   letter-spacing: 0.02em;
 }
 
+.site-nav .link,
+.contacts-nav .link {
+  display: block;
+}
+
+/* site nav */
 .site-nav .link {
   color: var(--grey-secondary-color);
 }
@@ -198,6 +216,10 @@ img {
 
 .address-nav {
   font-style: normal;
+}
+
+.address-nav .link {
+  display: block;
 }
 
 .address-nav .direction {
@@ -254,10 +276,6 @@ img {
 /* what we do */
 
 /* our team */
-.section.team {
-  background-color: var(--white-secondary-color);
-}
-
 .team-list .title,
 .team-list p {
   font-size: 16px;
@@ -289,7 +307,11 @@ img {
 
 /* portfolio list */
 .portfolio-list .link {
-  border-bottom: 1px solid var(--portfolio-card-border-color);
+  display: block;
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--portfolio-card-border-color);
 }
 
 .portfolio-list .title {
