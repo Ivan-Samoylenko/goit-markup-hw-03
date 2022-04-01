@@ -6,6 +6,8 @@
   /* layout grid */
   --container-width: 1200px;
   --container-indent: 15px;
+  --gutter: 30px;
+  --features-columns: 4;
   /* colors */
   --accent-color: #2196f3;
   --black-logo-color: #000000;
@@ -249,7 +251,7 @@ img {
   font-style: normal;
 }
 
-.address-nav > li:not(:last-child) {
+.address-nav > .item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -276,6 +278,9 @@ img {
 
 /* hero */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   text-align: center;
   background-color: var(--grey-footer-color);
 }
@@ -293,6 +298,18 @@ img {
 }
 
 /* features */
+.features-list {
+  margin-top: -30px;
+  margin-left: -30px;
+  display: flex;
+}
+
+.features-list>.item {
+  width: calc(100% / 4 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
 .features-list .title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -303,16 +320,44 @@ img {
   color: var(--grey-secondary-color);
 }
 
-.features-list p {
+.features-list .text {
   margin-top: 0;
   margin-bottom: 0;
 }
 
 /* what we do */
+.works {
+  margin-top: -30px;
+  margin-left: -30px;
+  display: flex;
+}
+
+.works > .item {
+  width: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
 
 /* our team */
+.team-list {
+  margin-top: -30px;
+  margin-left: -30px;
+  display: flex;
+}
+
+.team-list .item {
+  width: calc(100% / 4 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.team-list .photo {
+  margin-bottom: 30px;
+}
+
 .team-list .title,
-.team-list p {
+.team-list .text {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -326,7 +371,7 @@ img {
   color: var(--grey-secondary-color);
 }
 
-.team-list p {
+.team-list .text {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -338,9 +383,28 @@ img {
 /* portfolio filter */
 .filter {
   margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.filter > .item+.item{
+  margin-left: 8px;
 }
 
 /* portfolio list */
+.portfolio-list {
+  margin-top: -30px;
+  margin-left: -30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-list > .item {
+  width: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
 .portfolio-list .link {
   display: block;
 
