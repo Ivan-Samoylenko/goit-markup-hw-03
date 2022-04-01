@@ -12,8 +12,8 @@
   --grey-primary-color: #757575;
   --grey-secondary-color: #212121;
   --grey-footer-color: #2f303a;
-  --header-border-color: #ECECEC;
-  --portfolio-card-border-color: #EEEEEE;
+  --header-border-color: #ececec;
+  --portfolio-card-border-color: #eeeeee;
 }
 
 /* page */
@@ -23,6 +23,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--grey-primary-color);
+  background-color: var(--white-primary-color);
 }
 
 img {
@@ -145,7 +146,7 @@ img {
 /* ============== */
 
 .header {
-  border: 1px solid var(--header-border-color);;
+  border-bottom: 1px solid var(--header-border-color);;
 }
 
 /* site nav */
