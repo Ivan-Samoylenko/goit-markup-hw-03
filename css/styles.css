@@ -7,7 +7,6 @@
   --container-width: 1200px;
   --container-indent: 15px;
   --gutter: 30px;
-  --features-columns: 4;
   /* colors */
   --accent-color: #2196f3;
   --black-logo-color: #000000;
@@ -299,15 +298,15 @@ img {
 
 /* features */
 .features-list {
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top: calc(-1 * var(--gutter));
+  margin-left: calc(-1 * var(--gutter));
   display: flex;
 }
 
 .features-list>.item {
-  width: calc(100% / 4 - 30px);
-  margin-top: 30px;
-  margin-left: 30px;
+  width: calc(100% / 4 - var(--gutter));
+  margin-top: var(--gutter);
+  margin-left: var(--gutter);
 }
 
 .features-list .title {
@@ -327,29 +326,29 @@ img {
 
 /* what we do */
 .works {
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top: calc(-1 * var(--gutter));
+  margin-left: calc(-1 * var(--gutter));
   display: flex;
 }
 
 .works > .item {
-  width: calc(100% / 3 - 30px);
-  margin-top: 30px;
-  margin-left: 30px;
+  width: calc(100% / 3 - var(--gutter));
+  margin-top: var(--gutter);
+  margin-left: var(--gutter);
 }
 
 
 /* our team */
 .team-list {
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top: calc(-1 * var(--gutter));
+  margin-left: calc(-1 * var(--gutter));
   display: flex;
 }
 
 .team-list .item {
-  width: calc(100% / 4 - 30px);
-  margin-top: 30px;
-  margin-left: 30px;
+  width: calc(100% / 4 - var(--gutter));
+  margin-top: var(--gutter);
+  margin-left: var(--gutter);
   border-radius: 0px 0px 4px 4px;
 
   background-color: var(--white-primary-color);
@@ -397,16 +396,16 @@ img {
 
 /* portfolio list */
 .portfolio-list {
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top: calc(-1 * var(--gutter));
+  margin-left: calc(-1 * var(--gutter));
   display: flex;
   flex-wrap: wrap;
 }
 
 .portfolio-list > .item {
-  width: calc(100% / 3 - 30px);
-  margin-top: 30px;
-  margin-left: 30px;
+  width: calc(100% / 3 - var(--gutter));
+  margin-top: var(--gutter);
+  margin-left: var(--gutter);
 }
 
 .portfolio-list .link {
